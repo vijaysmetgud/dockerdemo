@@ -4,7 +4,7 @@ LABEL author="vijay"
 
 
 
-RUN useradd -d /petclinic -m -s /bin/bash -D petclinic
+RUN useradd -d /petclinic -m -s /bin/sh -D petclinic
 
 ARG DOWNLOAD_URL="https://khajareferenceapps.s3.ap-south-1.amazonaws.com/spring-petclinic-3.2.0-SNAPSHOT.jar"
 
