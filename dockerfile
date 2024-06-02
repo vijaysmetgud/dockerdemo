@@ -2,7 +2,7 @@ FROM amazoncorretto:17
 
 LABEL author="vijay"
 
-RUN adduser -h /petclinic -s /bin/sh -D /spc
+RUN adduser -h /app /petclinic spc
 
 USER spc
 
