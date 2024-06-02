@@ -6,6 +6,7 @@ RUN adduser -h /petclinic -s /bin/sh -D petclinic
 
 ADD https://referenceapplicationskhaja.s3.us-west-2.amazonaws.com/spring-petclinic-2.4.2.jar /petclinic/spring-petclinic-2.4.2.jar
  
+COPY /petclinic/spring-petclinic-2.4.2.jar .
 USER petclinic
 
 WORKDIR /petclinic
