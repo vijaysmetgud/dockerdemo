@@ -2,7 +2,7 @@ FROM amazoncorretto:17
 
 LABEL author="vijay"
 
-RUN adduser -h /petclinic -s /bin/sh -D petclinic
+RUN adduser -h /petclinic -s /bin/bash -D petclinic
 
 ADD --chown=petclinic:petclinic https://khajareferenceapps.s3.ap-south-1.amazonaws.com/spring-petclinic-3.2.0-SNAPSHOT.jar /petclinic/spring-petclinic-3.2.0-SNAPSHOT.jar
  
