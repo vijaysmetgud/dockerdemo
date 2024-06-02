@@ -2,7 +2,7 @@ FROM amazoncorretto:17
 
 LABEL author="vijay"
 
-RUN useradd -d /app -m -s /bin/bash 
+RUN useradd -d /app -m -s /sbin/bash spc
 
 USER spc
 
