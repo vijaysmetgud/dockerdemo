@@ -1,5 +1,5 @@
 FROM amazoncorretto:17
-LABEL application="demospcapp"
+
 LABEL author= "vijay"
 
 RUN useradd -d /app -m -s /bin/bash spc
