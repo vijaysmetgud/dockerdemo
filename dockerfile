@@ -6,6 +6,8 @@ RUN adduser -h /downloadloc -s /bin/sh -D spc
 
 ARG DOWNLOAD_URL="https://referenceapplicationskhaja.s3.us-west-2.amazonaws.com/spring-petclinic-2.4.2.jar"
 
+RUN sudo apt install curl
+
 RUN curl -O ${DOWNLOAD_URL}
 
 USER spc
