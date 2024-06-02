@@ -10,7 +10,7 @@ USER petclinic
 
 WORKDIR /spc
 
-ADD --chown=petclinic:petclinic ${DOWNLOAD_URL} {WORKDIR}/spring-petclinic-3.2.0-SNAPSHOT.jar
+ADD --chown=petclinic:petclinic ${DOWNLOAD_URL} /spc/spring-petclinic-3.2.0-SNAPSHOT.jar
  
 EXPOSE 8080
 
