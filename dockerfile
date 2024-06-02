@@ -1,6 +1,6 @@
 FROM amazoncorretto:17
 
-LABEL author= "vijay"
+LABEL author="vijay"
 
 RUN useradd -d /app -m -s /bin/bash spc
 
