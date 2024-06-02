@@ -4,9 +4,7 @@ LABEL author="vijay"
 
 RUN adduser -h /downloadloc -s /bin/sh -D spc
 
-ARG DOWNLOAD_URL="https://referenceapplicationskhaja.s3.us-west-2.amazonaws.com/spring-petclinic-2.4.2.jar"
-
-ADD wget ${DOWNLOAD_URL} /downloadloc
+ADD wget "https://referenceapplicationskhaja.s3.us-west-2.amazonaws.com/spring-petclinic-2.4.2.jar" /downloadloc
 
 USER spc
 
