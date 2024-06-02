@@ -1,4 +1,4 @@
-FROM amazoncorretto:17
+FROM amazoncorretto:17-alpine3.17
 
 LABEL author="vijay"
 
