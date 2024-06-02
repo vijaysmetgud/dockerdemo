@@ -1,15 +1,16 @@
-FROM amazoncorretto:17
+FROM amazoncorretto:11-alpine3.17
 
 LABEL author="vijay"
 
-RUN adduser -h /temp -s /bin/bash -D ubuntu
+RUN adduser -h /temp -s /bin/bash -D spc
 
 ARG DOWNLOAD_URL="https://referenceapplicationskhaja.s3.us-west-2.amazonaws.com/spring-petclinic-2.4.2.jar"
 
 RUN curl -O ${DOWNLOAD_URL}
 
-USER ubuntu
-WORKDIR /temp
+USER spc
+
+WORKDIR /downloadloc
 
 EXPOSE  8080
 
